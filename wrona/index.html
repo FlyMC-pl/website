@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyMC.pl | Wrona</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="content-div">
+        <p id="title-text">serwermc.xd</p>
+        <p id="wrona-name" title="Kliknij aby edytować nazwę...">Wronu</p>
+        <div id="wrona-div">
+            <img id="wrona-skin" src="../assets/wrona-art-bigger.png">
+            <div id="wrona-shadow"></div>
+        </div>
+        <div id="paski-div">
+            <div id="eat-pasek-out">
+                <div id="eat-pasek-in">
+                    <img onclick='OpenFeedMenu("eat")' class="pasek-icon" src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/minecraft/6/66/Steak.png">
+                </div>
+            </div>
+            <p onclick='OpenFeedMenu("eat")' id="eat-text">Jedzenie</p>
+            <div id="sleep-pasek-out">
+                <div id="sleep-pasek-in">
+                    <img onclick='OpenFeedMenu("sleep")' class="pasek-icon" src="https://www.pngplay.com/wp-content/uploads/2/Bed-PNG-Photos.png">
+                </div>
+            </div>
+            <p id="sleep-text" onclick='OpenFeedMenu("sleep")'>Sen</p>
+            <div id="clean-pasek-out">
+                <div id="clean-pasek-in">
+                    <img onclick='OpenFeedMenu("clean")' class="pasek-icon" src="https://m.ftbwiki.org/images/thumb/c/cc/Block_Wet_Sponge.png/128px-Block_Wet_Sponge.png">
+                </div>
+            </div>
+            <p onclick='OpenFeedMenu("clean")' id="clean-text">Czystość</p>
+        </div>
+    </div>
+    <div id="down-bar">
+        <p id="needs-div-title">Jedzenie</p>
+        <img id="close-div" onclick="CloseFeedMenu()" src="https://wronadev.github.io/design/assets/xmark.png">
+        <img id="tenp-img" src="../assets/10p-img.png">
+        <p id="tenp-text">Ziarna</p>
+        <img id="fifteenp-img" src="../assets/15p-img.png">
+        <p id="fifteenp-text">Chleb</p>
+        <img id="thirtyp-img" src="../assets/30p-img.png">
+        <p id="thirtyp-text">Ślimaki</p>
+        <img id="fourtyp-img" src="../assets/40p-img.png">
+        <p id="fourtyp-text">Frytki</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

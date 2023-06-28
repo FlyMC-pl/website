@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    background-color: #141414;
+    overflow-y: hidden;
+}
+
+#content-div {
+    position: absolute;
+    width: 1120px;
+    height: 95%;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+}
+
+#title-text {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 9.5px;
+    margin-left: 10px;
+}
+
+#wrona-name {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: -300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+#wrona-div {
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    background-color: transparent;
+    margin-top: -100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#wrona-skin {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#wrona-div::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    box-shadow: 0 0 75px 75px #222222;
+    background-color: #222222;
+    margin-top: 220px;
+    margin-left: 150px;
+    z-index: 1;
+}
+
+#wrona-shadow {
+    width: 180px;
+    height: 0px;
+    background-color: black;
+    margin-top: 370px;
+    margin-left: 70px;
+    border-radius: 999px;
+    box-shadow: black 0 0 50px 35px;
+    rotate: -2.5deg;
+    z-index: -1;
+}
+
+.pasek-icon {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    margin: 12.5px;
+}
+
+#eat-pasek-out {
+    cursor: pointer;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 999px;
+    margin-top: 150px;
+    margin-left: -120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#eat-pasek-in {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 999px;
+    background-color: #04FF00;
+    margin: 5px;
+}
+
+#eat-text {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 220px;
+    margin-left: -120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sleep-pasek-out {
+    cursor: pointer;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 999px;
+    margin-top: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#sleep-pasek-in {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 999px;
+    background-color: #04FF00;
+    margin: 5px;
+}
+
+#sleep-text {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 220px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#clean-pasek-out {
+    cursor: pointer;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 999px;
+    margin-top: 150px;
+    margin-left: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#clean-pasek-in {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 999px;
+    background-color: #04FF00;
+    margin: 5px;
+}
+
+#clean-text {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 220px;
+    margin-left: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#down-bar {
+    display: none;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-image: url("../assets/div-background.png");
+    border-radius: 10px;
+    border: solid 4px white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#needs-div-title {
+    position: absolute;
+    color: white;
+    text-shadow: 0 0 15px black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: -175px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#close-div {
+    cursor: pointer;
+    position: absolute;
+    border-radius: 999px;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 5px;
+    transition: all 0.3s ease-out;
+}
+
+#close-div:hover {
+    background-color: red;
+    transform: scale(0.8);
+    rotate: 180deg;
+}
+
+#tenp-img {
+    cursor: pointer;
+    width: 75px;
+    background-color: white;
+    border-radius: 999px;
+    margin-top: 70px;
+    margin-left: 48px;
+    border: solid 3px black;
+}
+
+#tenp-text {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: -30px;
+    margin-left: -60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#fifteenp-img {
+    cursor: pointer;
+    width: 75px;
+    background-color: white;
+    border-radius: 999px;
+    margin-top: 70px;
+    margin-left: 48px;
+    border: solid 3px black;
+}
+
+#fifteenp-text {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: -30px;
+    margin-left: 73px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#thirtyp-img {
+    cursor: pointer;
+    width: 75px;
+    background-color: white;
+    border-radius: 999px;
+    margin-top: 70px;
+    margin-left: 48px;
+    border: solid 3px black;
+}
+
+#thirtyp-text {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 125px;
+    margin-left: -60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#fourtyp-img {
+    cursor: pointer;
+    width: 75px;
+    background-color: white;
+    border-radius: 999px;
+    margin-top: 70px;
+    margin-left: 48px;
+    border: solid 3px black;
+}
+
+#fourtyp-text {
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 125px;
+    margin-left: 73px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1110px) {
+    #content-div {
+        width: 100%;
+        top: 0px;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    #content-div {
+        height: 100%;
+        top: 0px;
+    }
+}
+
+@media only screen and (max-height: 650px) {
+    #content-div {
+        height: 100%;
+        top: 50px;
+    }
+
+    #title-text {
+        top: -50px;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyMC.pl | Strona główna</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body onload="OnLoad()">
+    <div id="loading-page-div">
+        <img id="loading-page-img" src="/assets/flymc-icon.png">
+        <span id="loading-page-text">Loading page...</span>
+        <div id="loading-bar-out">
+            <div id="loading-bar-in"></div>
+        </div>
+    </div>
+    <div id="main-section">
+        <div id="navbar">
+            <a href="https://flymc.pl/">
+                <p id="nav-title">FlyMC.pl</p>
+            </a><!--
+            <a href="https://flymc.pl/regulamin">
+                <p id="info-text">Regulamin</p>
+            </a>-->
+            <a href="https://dc.flymc.pl/">
+                <p id="discord-text">Discord</p>
+            </a><!--
+            <a href="https://flymc.pl/sklep">
+                <p id="sklep-text">Sklep</p>
+            </a>-->
+        </div>
+        <div id="image-div">
+            <img id="title-icon" alt="Title icon" src="/assets/flymc-icon.png"><!--
+            <img id="background-img" src="assets/background-img1.png" alt="Background Image">-->
+        </div>
+        <div id="main-section-div">
+            <div id="about-us-div">
+                <p id="about-us-main-text">O nas</p>
+                <p id="about-us-text">
+                    FlyMC.pl to serwer Minecraft, który zachwyca swoją przyjazną
+                    atmosferą i profesjonalną administracją. Dzięki starannemu
+                    dobieraniu administracji, gracze mogą cieszyć się przyjazną
+                    atmosferą. Serwer oferuje także wiele autorskich rozwiązań,
+                    które wyróżniają nas spośród innych. Innowacyjne funkcje
+                    i unikalne pluginy zapewniają niezapomniane doświadczenie.
+                </p>
+            </div><!--
+            <button id="discord-div">DISCORD</button>
+            <div id="server-list">
+                <img id="server-icon" alt="Server icon" src="https://media.minecraftforum.net/attachments/300/619/636977108000120237.png">
+                <p id="server-list-text">FlyMC.pl</p>
+                <div id="server-active-dot"></div>
+                <p id="server-active-text">OFFLINE</p>
+                <div id="server-motd">
+                    <p id="motd-text1">
+                        <text style="color: #00E6FE">Fly</text><text style="color: white">MC.pl</text>
+                    </p>
+                    <p id="motd-text2">
+                        <text style="color: rgb(107, 0, 107)">Survival + Działki</text><text style="color: rgb(255, 50, 50)"> 1.19</text>
+                    </p>
+                </div>
+            </div>-->
+        </div>
+        <img onmouseenter="ShowHelloDiv()" onmouseleave="HideHelloDiv()" alt="Hello Image" id="hello-img" src="https://lh3.googleusercontent.com/dxWdSDxgHTCV39zZUBIDOgSvjQlmWiuqIi7MNL2MZBX3xKcJ_8oWibv4HgYuVCyvg3HQHLUKWt82xfHJDzQm-g=s400">
+        <div id="hello-div">
+            <p style="margin-top: 10px; margin-left: 19px;">ShowMC.pl na ciebie czeka!</p>
+        </div>
+    </div>
+    <div id="info-section">
+        <div id="features-div">
+            <p id="features-main-text">Dlaczego my?</p>
+            <div id="features-row">
+                <div id="features-div1">
+                    <img class="tryby-img" alt="Security Image" src="assets/shield.webp">
+                    <p id="features-main-text1">Bezpieczeństwo</p>
+                    <p id="features-text1">Oferujemy niezwykle skuteczne i zaawansowane zabezpieczenia. Posiadamy systemy anty-DDoS oraz świetnego Anty Cheata. Dzięki profesjonalnym zabezpieczeniom serwera FlyMC.pl możesz cieszyć się przyjazną rozgrywką.</p>
+                </div>
+                <div id="features-div2">
+                    <img class="tryby-img" alt="Atmosphere Image" src="assets/axolotl1.webp">
+                    <p id="features-main-text2">Przyjazna atmosfera</p>
+                    <p id="features-text2">Serwer FlyMC.pl posiada świetne community tworzone przez graczy oraz administracje. Dbamy o to by każdy czuł się tu bezpiecznie i swobodnie, dlatego gracze są w stałym kontakcie z administracją.</p>
+                </div>
+                <div id="features-div3">
+                    <img class="tryby-img" alt="Play Image" src="/assets/eye_of_ender.gif">
+                    <p id="features-main-text3">Rozgrywka</p>
+                    <p id="features-text3">Na naszym serwerze rozgrywka jest urozmaicona o wiele autorskich rozwiązań. Grając tu na pewno nie będziesz się nudzić. Posiadamy takie urozmaicenia jak: questy, prace, ekonomia, sklep i wiele więcej!</p>
+                </div>
+                <div id="features-div4">
+                    <img class="tryby-img" alt="Quality Image" src="assets/emerald.gif">
+                    <p id="features-main-text4">Jakość</p>
+                    <p id="features-text4">Oferujemy niezrównaną jakość rozgrywki, zapewniając stabilne połączenie i minimalne opóźnienia. Zapewniamy również szybki kontakt z administracją w przypadku wystąpienia jakichkolwiek problemów podczas rozgrywki.</p>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div id="discord-section">
+        <span>Nasz serwer Discord!</span>
+        <p>Dołącz do naszego community!</p>
+        <a href="https://dc.flymc.pl">
+            <div id="discord-button">
+                <span>Discord</span>
+            </div>
+        </a>
+    </div>
+    <div id="footer-section">
+        <div id="important-links">
+            <a href="https://flymc.pl/regulamin">
+                <p>Regulamin</p>
+            </a><!--
+            <a href="https://flymc.pl/sklep">
+                <p>Sklep</p>
+            </a>-->
+            <a href="https://dc.flymc.pl">
+                <p>Discord</p>
+            </a>
+        </div>
+        <div id="social-links">
+            <a href="https://www.tiktok.com/@flymc.pl">
+                <p>TikTok</p>
+            </a> <!--
+            <a href="https://youtube.com/flymc.pl">
+                <p>Youtube</p>
+            </a> -->
+            <a href="https://github.com/FlyMC-pl">
+                <p>GitHub</p>
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
