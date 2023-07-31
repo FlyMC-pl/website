@@ -3,6 +3,7 @@
 Simple website of Minecraft server.
 
 #### Languages & Tools:
- - HTML
- - CSS
- - JS
+
+ - <img src="https://wronadev.github.io/assets/html-icon.png" width="20" height="20"> HTML
+ - <img src="https://wronadev.github.io/assets/css-icon.png" width="20" height="20"> CSS
+ - <img src="https://wronadev.github.io/assets/javascript-icon.png" width="20" height="20"> JavaScript
